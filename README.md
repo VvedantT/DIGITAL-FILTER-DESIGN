@@ -7,6 +7,11 @@
 *DURATION*  :8 WEEKS
 *MENTOR*    :NEELA SANTOSH
 
+
+In this project I have first generated the input data using python. the data generated is random noise and saved it in binary form as verilog can only process in binary 
+the that data is filtered and again the output is ploted using matplotlib in python.
+
+
 An FIR filter is a type of digital filter where the output is a weighted sum of current and previous input samples. The key features in this design include:
 
 Inputs:
@@ -36,5 +41,10 @@ Outputs such as input samples, output values, and time stamps may be printed usi
 Helps in verifying if the filter response is as expected for a given input sequence.
 
 <img width="855" height="636" alt="Image" src="https://github.com/user-attachments/assets/10511ed1-6b1e-4626-b635-29bc4fa5ef1e" />
+
+As you can see the difference in the input and output the output wave is very smooth all the noise has been filtered
+also there is a delay between the original and the filtered signal this occurd as the input is recived in onr cycle and the output is updated in the next cycle therefore there is a delay of 1 clock cycle
+
+these two are just simulation outputs
 <img width="1593" height="819" alt="Image" src="https://github.com/user-attachments/assets/219cf0b3-8cd7-40c8-8142-052cc0409a45" />
 <img width="1580" height="819" alt="Image" src="https://github.com/user-attachments/assets/2200eb00-e7b2-45e9-8693-5a6f821ed4c3" />
