@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+#converting binary to decimal
 def todecimal(x,bits):
     assert len(x)<=bits
     n=int(x,2)
@@ -14,11 +14,13 @@ N2=16
 N3=32
 
 real_coeff=(1/tap);
-
+#decimal to binary
 coeff_bit=np.binary_repr(int(real_coeff*(2**(N1-1))),N1)
-todecimal(coeff_bit,N1)/(2**(N1-1))
+#just to check
+print(todecimal(coeff_bit,N1)/(2**(N1-1)))
 
 timeVector=np.linspace(0,2*np.pi,100)
+# randomizing the signal
 output=np.sin(2*timeVector)+np.cos(3*timeVector)+0.3*np.random.randn(len(timeVector))
 
 plt.plot(output)
